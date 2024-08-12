@@ -33,6 +33,7 @@ int roll(){
         That means:
         1) Windows targets will generate zeros in the upper part of a 32-bit number, screwing up the result.
         2) The upper most bit will always be 0, meaning one of the dice will have 2 sides instead of 4.
+        3) You can minimize rand() calls even further by getting a proper PRNG that generates 32 or 64 bytes.
         */
         dice = roll & bitmap1; 
         if (!dice){ //Hand-written assembly can probably shave off lots of time by removing CMP instructions.
