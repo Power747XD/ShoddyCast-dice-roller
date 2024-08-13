@@ -157,7 +157,7 @@ int main(){
       }  
     }
 
-    //Measures the time it took for 1.000.000.000 attempts.
+    //Measures the time it took for 1.0.000.000 attempts.
     clock_t end = clock();
     double time_delta = ((double) end - start) / CLOCKS_PER_SEC; 
     puts("Number of attempts: 1.000.000.000");
